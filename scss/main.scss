@@ -1,0 +1,88 @@
+.container{
+    width: 800px;
+    height: 350px;
+    border: 10px solid black;
+    margin: 100px auto;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    z-index: 10;
+    .koz{
+        width: 400px;
+        height: 330px;
+        background-color: goldenrod;
+        border-radius: 500%;
+        animation-name: koz;
+        z-index: -1;
+        animation-iteration-count: infinite;
+        animation-duration: 10s;
+        animation-delay: 1s;
+        animation-timing-function: linear;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .qorachiq{
+            width: 230px;
+            height: 180px;
+            background-color: black;
+            border-radius: 50%;
+            animation-name: koz;
+            position: absolute;
+            z-index: 11;
+            animation-iteration-count: infinite;
+            animation-duration: 10s;
+            animation-delay: 1s;
+            animation-timing-function: linear;
+        }
+    }
+
+
+
+
+    @keyframes koz{
+        0%{
+            margin: 0;
+        }
+      20%{
+       margin: 0;
+      }
+      40%{
+        margin-right: 250px;
+      }
+      60%{
+        margin-right: 0px;
+      }
+      80%{
+        margin-left: 250px;
+      }
+      100%{
+        margin-left: 0px;
+      }
+
+
+        
+    }
+    @keyframes qorachiq{
+        0%{
+            margin: 0;
+        }
+      20%{
+       margin: 0;
+      }
+      40%{
+        margin-right: 250px;
+      }
+      60%{
+        margin-right: 0px;
+      }
+      80%{
+        margin-left: 250px;
+      }
+      100%{
+        margin-left: 250px;
+      }
+}
+}
